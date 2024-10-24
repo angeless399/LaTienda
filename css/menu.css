@@ -1,0 +1,145 @@
+ /* first mobil */
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--acento);
+    border-left: 5px solid var(--acento);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .usuario a {
+    padding: 10px;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+header .usuario i {
+    font-size: 1.2em;
+}
+
+
+header p {
+    font-size: 1.8em;
+    color: var(--color-principal);
+} 
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+}
+
+nav label {
+    background-color: var(--transparencia);
+    color: var(--color-secundario);
+    padding: 8px 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .btn {   
+    /* padding: 5px; */
+    font-size: 1.5em; 
+    cursor: pointer;
+}
+
+nav #open-menu {
+    display: none;
+}
+
+nav .link {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: var(--transparencia);
+    margin-left: -60%;
+    transition: all 0.5s;
+}
+
+
+nav .link a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 15px;
+    border-top: 1px solid var(--color-secundario);
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+nav .link a i {
+    color: var(--acento);
+}
+
+nav #open-menu:checked ~ .link{
+    margin-left: 0;
+}
+
+.formBuscar {
+    border: 1px solid var(--color-secundario);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--color-secundario);
+
+}
+
+.formBuscar i {
+    color: var(--color-principal)
+}
+
+.formBuscar input {
+    background: transparent;
+    border: 0;
+    width: 250px;
+ 
+}
+
+header .formBuscar{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    /* breakpoint para tablet */
+
+    nav label {
+        display: none;
+    }
+
+    nav .link {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    nav .link a {
+        border-top: 0;
+        margin: 5px;
+    }
+
+    header .formBuscar{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    /* breakpoint para pc */
+
+}
