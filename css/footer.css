@@ -22,7 +22,7 @@ footer img {
 }
 .integrantes, .curso{
     color: rgb(88, 179, 249);
-    color: var(--acento)
+    color: var(--color-secundario)
 }
 
 @media screen and (min-width: 768px) {
