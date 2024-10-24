@@ -1,7 +1,7 @@
  /* first mobil */
 header {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     background-color: var(--acento);
     border-left: 5px solid var(--acento);
 
@@ -24,7 +24,7 @@ header .usuario i {
 
 
 header p {
-    font-size: 1.8em;
+    font-size: 2em;
     color: var(--color-principal);
 } 
 
@@ -32,14 +32,14 @@ header p {
 nav {
     width: 100%;
     position: absolute;
-    top: 55px;
+    top: 75px;
     z-index: 3000;
     display: flex;
     flex-direction: column;
 }
 
 nav label {
-    background-color: var(--transparencia);
+    background-color: var(--color-principal);
     color: var(--color-secundario);
     padding: 8px 15px;
 
@@ -141,5 +141,12 @@ header .formBuscar{
 
 @media screen and (min-width: 1024px) {
     /* breakpoint para pc */
+    nav .link a:hover{
+       color: var(--acento)
+    }
+
+    nav .link a:hover i {
+        color: var(--color-secundario);
+    }
 
 }

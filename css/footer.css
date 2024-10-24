@@ -4,7 +4,7 @@ footer {
     margin-top: 20px;
     background-color: var(--color-principal);
     color: var(--color-secundario);
-    border-top: 5px solid  rgb(88, 179, 249);
+    border-top: 5px solid var(--acento);
     padding: 20px;
     text-align: center;
 
@@ -18,7 +18,11 @@ footer {
 
 footer img {
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
+}
+.integrantes, .curso{
+    color: rgb(88, 179, 249);
+    color: var(--acento)
 }
 
 @media screen and (min-width: 768px) {
@@ -26,13 +30,13 @@ footer img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-right: 0;
     }
     .curso {
         text-align: center;
     }
     .integrantes {
         text-align: right;
+       
     }
 
 }
