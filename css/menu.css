@@ -29,7 +29,7 @@ header .usuario a {
 }
 
 header .usuario i {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 
@@ -83,13 +83,13 @@ nav .link {
 nav .link a {
     color: var(--color-secundario);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 15px;
     border-top: 1px solid var(--color-secundario);
 
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
    
 }
 
@@ -119,6 +119,7 @@ nav #open-menu:checked ~ .link{
     border: 0;
     outline: none;
     width: 250px;
+    font-size: 1.2em;
  
 }
 
