@@ -1,0 +1,89 @@
+ /* first mobil */
+.productos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--grises);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+    margin-bottom: 10px;
+
+}
+
+.card .descripcion {
+    font-size: 1em;
+}
+
+.card .precio {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: var(--acento);
+    margin: 15px 0;
+}
+
+.card .agregar {
+    display: flex;
+    justify-content: space-between;
+}
+.card form {
+    width: 50%;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card input {
+    width: 50px;
+    border-radius: 3px;
+    padding: 3px;
+    border: 0;
+    box-shadow: 0 0 2px var(--grises);
+   
+}
+
+.card form i {
+    font-size: 1.5em;
+    color: var(--grises)
+}
+
+.card .agregar button {
+    padding: 10px;
+    background: var(--acento);
+    border: 0;
+    border-radius: 3px
+}
+
+.card .agregar button i{
+    font-size: 1.5em;
+    color: var(--color-principal)
+}
+
+@media screen and (min-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(3, auto);
+        gap: 20px;
+
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(4, auto);
+
+    }
+}

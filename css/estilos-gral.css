@@ -13,14 +13,20 @@
      --color-secundario: rgb(241, 210, 143);
      --acento: rgb(246, 152, 53);
      --transparencia: rgba(61, 61, 61, 0.9);
+     --grises:  rgb(139, 138, 138);
    
+ }
+
+ body {
+    margin-bottom: 190px;
  }
 
  h1.titulo {
      text-align: center;
      margin-bottom: 20px;
      margin-top: 70px;
-     font-size: 1.5em;
+     font-size: 2em;
+     color: var(--color-principal);
  }
 
  .texto {
@@ -33,18 +39,24 @@
     width: 95%;
     margin: auto;
     padding: 10px;
-    height: 70vh;
  }
 
 
 
  @media screen and (min-width: 768px) {
      /* breakpoint para tablet */
+
+     body {
+        margin-bottom: 120px;
+     }
+
+     
  }
 
  @media screen and (min-width: 1024px) {
      /* breakpoint para pc */
      
+  
      main {
          max-width: 1000px;
      }
