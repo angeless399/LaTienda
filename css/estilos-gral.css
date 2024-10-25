@@ -17,9 +17,6 @@
    
  }
 
- body {
-    margin-bottom: 190px;
- }
 
  h1.titulo {
      text-align: center;
@@ -46,11 +43,9 @@
  @media screen and (min-width: 768px) {
      /* breakpoint para tablet */
 
-     body {
-        margin-bottom: 120px;
-     }
 
-     
+
+
  }
 
  @media screen and (min-width: 1024px) {

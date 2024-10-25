@@ -42,7 +42,7 @@ header p {
 nav {
     width: 100%;
     position: absolute;
-    top: 78px;
+    top: 60px;
     z-index: 3000;
     display: flex;
     flex-direction: column;
@@ -103,14 +103,15 @@ nav #open-menu:checked ~ .link{
 
 .formBuscar {
     border: 1px solid var(--color-secundario);
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 5px;
     background: var(--color-secundario);
 
 }
 
 .formBuscar i {
-    color: var(--color-principal)
+    color: var(--color-principal);
+    padding: 5px
 }
 
 .formBuscar input {
@@ -130,7 +131,7 @@ header .formBuscar{
 @media screen and (min-width: 768px) {
     /* breakpoint para tablet */
     nav {
-        top: 90px;
+        top: 80px;
     }
 
     nav label {

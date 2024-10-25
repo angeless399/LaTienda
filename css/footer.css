@@ -1,7 +1,5 @@
  /* first mobil */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     margin-top: 20px;
     background-color: var(--color-principal);
