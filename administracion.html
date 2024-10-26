@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos-gral.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <!-- <link rel="stylesheet" href="css/slide.css"> -->
+    <title>LaTienda</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/tienda.png" alt="">
+                <p class="marca">LaTienda</p>
+            </div>
+
+            <div class="formBuscar">
+                <form action="">
+                    <input type="search" name="" id="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+
+            <div class="usuario">
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <a href="salir.html" style="display: none;"><i class="fa-solid fa-right-from-bracket"
+                        id="btn-salir"></i></a>
+            </div>
+        </header>
+        <nav>
+            <input type="checkbox" id="open-menu">
+            <label for="open-menu">
+                <i class="fa-solid fa-bars btn"></i>
+                <div class="formBuscar">
+                    <form action="">
+                        <input type="search" name="" id="buscar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+            </label>
+
+            <div class="link">
+                <a href="index.html"><i class="fa-solid fa-circle-dollar-to-slot"></i> Ofertas</a>
+                <a href="tienda.html"><i class="fa-solid fa-store"></i> Tienda Digital</a>
+                <a href="contactenos.html"><i class="fa-solid fa-envelope"></i> Contáctenos</a>
+                <a href="sucursales.html"><i class="fa-solid fa-location-dot"></i>Sucursales</a>
+            </div>
+        </nav>
+
+        <main>
+            <h1 class="titulo">Administración de Productos</h1>
+            <div class="productos">
+
+                <div class="card">
+                    <div class="top">
+                        <img src="images/productos/Bananas.jpg" alt="">
+                        <p class="descrpcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus natus
+                            voluptates incidunt eveniet blanditiis?</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="precio">$3500</p>
+                        <div class="agregar">
+                            <form action="">
+                                <span>Stock: </span>
+                                <span>{200}</span>
+                            </form>
+                            <button><i class="fa-solid fa-pencil"></i></button>
+                            <button><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="img">
+                <img src="images/Logos_BA_Agencia_grande.jpg" alt="">
+            </div>
+            <div class="curso">
+                <p>FRONT END JS - Comisión: 24225</p>
+                <p>Año: 2024</P>
+            </div>
+            <div class="integrantes">
+                <p> María de los Ángeles López</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

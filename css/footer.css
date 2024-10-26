@@ -29,7 +29,8 @@ footer img {
     footer {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+   
     }
     .curso {
         text-align: center;
@@ -43,7 +44,7 @@ footer img {
 
 @media screen and (min-width: 1024px) {
     footer {
-    justify-content: space-around;
+    justify-content: space-evenly;
     }
 
 }

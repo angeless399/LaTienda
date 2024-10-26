@@ -2,15 +2,20 @@
 .productos {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 1fr ;
     gap: 20px;
 }
 
 .card {
     width: 100%;
+    max-width: 235px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 2px var(--grises);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
@@ -34,6 +39,7 @@
 .card .agregar {
     display: flex;
     justify-content: space-between;
+   
 }
 .card form {
     width: 50%;
@@ -42,7 +48,7 @@
     flex-direction: row;
     gap: 5px;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-start;
 
 }
 
@@ -74,7 +80,7 @@
 
 @media screen and (min-width: 768px) {
     .productos {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
 
     }
@@ -83,7 +89,7 @@
 
 @media screen and (min-width: 1024px) {
     .productos {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
 }
