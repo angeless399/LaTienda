@@ -47,4 +47,8 @@ footer img {
     justify-content: space-evenly;
     }
 
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
 }

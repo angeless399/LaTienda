@@ -12,11 +12,16 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="css/estilos-gral.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!-- <link rel="stylesheet" href="css/slide.css"> -->
-    <title>LaTienda</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/formularios.css">
+
+    <title>LaTienda: contáctenos</title>
 </head>
 
 <body>
@@ -62,14 +67,27 @@
     </nav>
 
     <main>
-        <h1 class="titulo">Bienvenidos</h1>
-        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum autem ut ex aspernatur modi
-            explicabo, eligendi, reprehenderit deserunt voluptas a culpa veniam quo, assumenda consequatur perferendis
-            sapiente ducimus voluptatum architecto.</p>
-        <img src="https://picsum.photos/800/500?random=3" alt="" class="inicial">
-        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero labore nam? Optio distinctio voluptatibus, rerum nihil sequi omnis eum qui, nemo minima rem consectetur totam, a tenetur quaerat tempore!</p>
-        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores libero labore nam? Optio distinctio voluptatibus, rerum nihil sequi omnis eum qui, nemo minima rem consectetur totam, a tenetur quaerat tempore!</p>
+        <h1 class="titulo">Ubicación y Contacto</h1>
+
+        <div class="contacto">
+        <section>
+            <form action="" class="formularios">
+                <h2>Contáctenos</h2>
+                <label for="nombre" class="">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="">
+                <label for="mail" class="">Email</label>
+                <input type="email" name="nombre" class="">
+                <label for="mensaje" class="">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="8"></textarea>
+                <input type="submit" value="Enviar Mensaje" class="">
+            </form>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7420165566396!2d-58.366478224521764!3d-34.66121766053671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33351c5eec7ef%3A0xbc677ec4ef26dd79!2s25%20de%20Mayo%20127%2C%20B1870BZD%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730473456605!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
     </main>
+
     <footer>
         <div class="img">
             <img src="images/Logos_BA_Agencia_grande.jpg" alt="">
@@ -82,7 +100,7 @@
             <p> María de los Ángeles López</p>
         </div>
     </footer>
-    <div>
+</div>
 </body>
 
 </html>

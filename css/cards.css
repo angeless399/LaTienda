@@ -29,6 +29,11 @@
     font-size: 1em;
 }
 
+.card .resenias {
+    display: block;
+    margin-top: 3px;
+}
+
 .card .precio {
     font-size: 1.3em;
     font-weight: 900;
@@ -66,7 +71,7 @@
     color: var(--grises)
 }
 
-.card .agregar button {
+.agregar button {
     padding: 10px;
     background: var(--acento);
     border: 0;

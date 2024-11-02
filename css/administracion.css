@@ -1,0 +1,23 @@
+#formAdmin {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+
+#AgregarProd, #EditarProd {
+    width: 48%;
+}
+
+@media screen and (min-width: 768px) {
+    /* breakpoint para tablet */
+
+    #formAdmin {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+}

@@ -13,12 +13,12 @@
      --color-secundario: rgb(241, 210, 143);
      --acento: rgb(246, 152, 53);
      --transparencia: rgba(61, 61, 61, 0.9);
-     --grises: rgb(139, 138, 138);
+     --grises: rgb(82, 81, 81);
 
  }
 
  /*Maquetacion general con grid*/
- .container {
+ .contenedor {
      display: grid;
      grid-template-rows: repeat(4, auto);
      grid-template-columns: 1fr;
@@ -48,6 +48,7 @@
      margin-top: 70px;
      font-size: 2em;
      color: var(--color-principal);
+     padding: 15px;
  }
 
  .texto {
@@ -62,7 +63,13 @@
      padding: 10px;
  }
 
+img.inicial {
+    width: 100%;
+    max-width: 800px;
 
+    display: block;
+    margin: 15px auto;
+}
 
  @media screen and (min-width: 768px) {
      /* breakpoint para tablet */
@@ -78,5 +85,9 @@
 
      main {
          max-width: 1000px;
+     }
+
+     body {
+        margin-bottom: 110px;
      }
  }
