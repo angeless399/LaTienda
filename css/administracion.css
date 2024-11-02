@@ -3,8 +3,6 @@
     margin: 15px auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    
 }
 
 #AgregarProd, #EditarProd {
