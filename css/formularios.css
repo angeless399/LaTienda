@@ -1,6 +1,6 @@
 .formularios {
     width: 100%;
-    min-width: 360px;
+    /* min-width: 340px; */
     max-width: 450px;
     margin: 10px auto;
     padding: 15px;
@@ -42,4 +42,30 @@
 .formularios input[type="submit"]:hover {
       background: var(--color-principal);
       color: var(--color-secundario);
+}
+
+.formularios .linkForm {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formularios .news input, .formularios .news label {
+   box-shadow: 0 0 0;
+   display: inline-block;
+   width: auto;
+   margin-right: 5px;
+   font-size: 0.8em;
+
+}
+
+.formularios .news{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+ #login p {
+ text-align: center;
+ margin-bottom: 10px;
 }

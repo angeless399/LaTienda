@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos-gral.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/formularios.css">
+
+    <title>LaTienda</title>
+</head>
+
+<body>
+    <div class="contenedor">
+    <header>
+        <div class="logo">
+            <img src="images/tienda.png" alt="">
+            <p class="marca">LaTienda</p>
+        </div>
+
+        <div class="formBuscar">
+            <form action="">
+                <input type="search" name="" id="buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
+
+        <div class="usuario">
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="salir.html" style="display: none;"><i class="fa-solid fa-right-from-bracket"
+                    id="btn-salir"></i></a>
+        </div>
+    </header>
+    <nav>
+        <input type="checkbox" id="open-menu">
+        <label for="open-menu">
+            <i class="fa-solid fa-bars btn"></i>
+            <div class="formBuscar">
+                <form action="">
+                    <input type="search" name="" id="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </label>
+
+        <div class="link">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Bienvenidos</a>
+            <a href="tienda.html"><i class="fa-solid fa-store"></i>Tienda</a>
+            <a href="contactenos.html"><i class="fa-solid fa-envelope"></i>Contáctenos</a>
+            <a href="administracion.html"><i class="fa-solid fa-toolbox"></i>Administración</a>
+        </div>
+    </nav>
+
+    <main>
+
+        
+        <h1 class="titulo">Registrarse</h1>
+
+        <section>
+            <form action="" id="login" class="formularios">
+                <h2></h2>
+                <label for="usuario" class="">Usuario</label>
+                <input type="text" name="usuario" id="usuario" class="" placeholder="Nombre de usuario">
+                <label for="mail" class="">Email</label>
+                <input type="email" name="email" class="" placeholder="Escriba su email">
+                <label for="pass" class="">Contraseña</label>
+                <input type="password" name="pass" class="" placeholder="Contraseña">   
+                
+                
+                <div class="news"><input type="checkbox" name="news" id="news" checked><label for="news">suscripción a novedades y promociones</label></div>
+                <input type="submit" value="Registrame" class="">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="img">
+            <img src="images/Logos_BA_Agencia_grande.jpg" alt="">
+        </div>
+        <div class="curso">
+            <p>FRONT END JS - Comisión: 24225</p>
+            <p>Año: 2024</P>
+        </div>
+        <div class="integrantes">
+            <p> María de los Ángeles López</p>
+        </div>
+    </footer>
+    <div>
+</body>
+
+</html>
