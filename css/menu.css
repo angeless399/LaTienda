@@ -22,7 +22,7 @@ header img {
 }
 
 header .usuario a {
-    padding: 10px;
+    padding: 5px;
     color: var(--color-principal);
     text-decoration: none;
 }
@@ -137,6 +137,10 @@ header .formBuscar{
 
     nav label {
         display: none;
+    }
+
+    header .usuario a {
+        padding: 10px;
     }
 
     nav .link {

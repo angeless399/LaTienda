@@ -39,8 +39,19 @@
     font-weight: 900;
     color: var(--acento);
     margin: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
+.card .precio i {
+    color: var(--color-principal);
+}
+
+.card .precio i.fa-heart-circle-check {
+    color: var(--acento);
+
+}
 .card .agregar {
     display: flex;
     justify-content: space-between;
