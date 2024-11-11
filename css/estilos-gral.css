@@ -44,8 +44,8 @@
  
  h1.titulo {
      text-align: center;
-     margin-bottom: 20px;
-     margin-top: 70px;
+     margin-bottom: 10px;
+     margin-top: 60px;
      font-size: 2em;
      color: var(--color-principal);
      padding: 15px;

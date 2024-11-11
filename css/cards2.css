@@ -1,14 +1,14 @@
  /* first mobil */
 .productos {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 15px;
+    max-width: 380px;
+    margin: auto;
 }
 
 .card {
     width: 100%;
-    max-width: 235px;
+    min-width: 340;
+    /* max-width: 235px; */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 2px var(--grises);
@@ -95,18 +95,50 @@
     color: var(--color-principal)
 }
 
+.opiniones {
+    margin-top: 10px;
+}
+
+.opiniones .resenia {
+  border-top: 2px solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.opiniones .resenia .usuario {
+    font-size: 0.8em;
+}
+
+.opiniones .resenia .estrellas {
+    margin: 15px auto;
+    color: var(--acento);
+}
+
+.opiniones .resenia .comentario {
+    font-size: 0.9em;
+}
+
 @media screen and (min-width: 768px) {
+
     .productos {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
+        width: 100%;
+        max-width: none;
+        margin: auto;
+    }
+    .card {
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        padding: 15px;
 
     }
+
 }
 
 
 @media screen and (min-width: 1024px) {
-    .productos {
+    /* .productos {
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    }
+    } */
 }
