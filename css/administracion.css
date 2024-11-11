@@ -1,8 +1,12 @@
 #formAdmin {
     width: 100%;
-    margin: 15px auto;
-    display: flex;
-    flex-direction: column;
+    max-width: 1000px;
+    margin: 15px 0;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 15px; */
 }
 
 #AgregarProd, #EditarProd {
@@ -13,14 +17,16 @@
     /* breakpoint para tablet */
 
     #formAdmin {
-        flex-direction: row;
-        justify-content: space-between;
+        /* flex-direction: row;
+        justify-content: space-between; */
+        grid-template-columns: 1fr 1fr ;
+        gap: 15px;
 
     }
 
-    #AgregarProd, #EditarProd {
+    /* #AgregarProd, #EditarProd {
         width: 48%;
-    }
+    } */
     
 
 }
