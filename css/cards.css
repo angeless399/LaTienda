@@ -26,7 +26,7 @@
 
 }
 
-.card .titProd {
+.titProd {
     font-family: "Roboto Condensed", sans-serif;;
     font-weight: bold;
     margin-bottom: 10px;
@@ -59,12 +59,12 @@
     color: var(--acento);
 
 }
-.card .agregar {
+.agregar {
     display: flex;
     justify-content: space-between;
    
 }
-.card form {
+.agregar form {
     width: 50%;
     padding: 3px;
     display: flex;
@@ -75,7 +75,7 @@
 
 }
 
-.card input {
+.agregar input {
     width: 40px;
     border-radius: 3px;
     padding: 3px;
@@ -85,7 +85,7 @@
    
 }
 
-.card form i {
+.agregar form i {
     font-size: 1.5em;
     color: var(--grises)
 }
@@ -99,7 +99,7 @@
     font-size: 1em;
 }
 
-.card .agregar button i{
+.agregar button i{
     font-size: 1.5em;
     color: var(--color-principal)
 }
