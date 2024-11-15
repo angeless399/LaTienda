@@ -2,4 +2,4 @@
 
 ## para esta pre-entrega prepare una plantilla para un ecommerce general (sin un tema específico)
 
-## codificación 100% html y css (sin utilización de bootstrap)
+## codificación 100% html y css (sin utilización de bootstrap)otstrap
