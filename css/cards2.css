@@ -89,14 +89,22 @@
     color: var(--grises)
 }
 
-.agregar button {
+button {
+    border: 0;
+    padding: 3px;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+
+.agregar button.addcarrito {
     padding: 10px;
     background: var(--acento);
     border: 0;
     border-radius: 3px
 }
 
-.card .agregar button i{
+.card .agregar button.addcarrito i{
     font-size: 1.5em;
     color: var(--color-principal)
 }

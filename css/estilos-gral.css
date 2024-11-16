@@ -41,6 +41,9 @@
      grid-area: footer;
  }
 
+ button {
+    cursor: pointer;
+ }
  
  h1.titulo {
      text-align: center;

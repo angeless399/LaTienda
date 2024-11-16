@@ -30,11 +30,26 @@
     /* align-items: start; */
 }
 
-.detalle button {
+#carrito button.vaciar {
+    border: 0;
+    text-decoration: underline;
+    color: var(--color-principal);
+    background: transparent;
+}
 
+#carrito button.vaciar:hover {
+    color: var(--acento);
+}
+
+.detalle button {
     border: 0;
     align-self: flex-end;
+    background: transparent;
 
+}
+
+.detalle button:hover {
+    color: var(--acento);
 }
 
 .agregar .precio {

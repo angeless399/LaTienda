@@ -67,9 +67,10 @@
 .agregar form {
     width: 50%;
     padding: 3px;
+
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 1px;
     align-items: center;
     justify-content:flex-start;
 
@@ -90,7 +91,14 @@
     color: var(--grises)
 }
 
-.agregar button {
+button {
+    border: 0;
+    padding: 3px;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.agregar button.addcarrito {
     padding: 8px;
     margin: 3px;
     background: var(--acento);
@@ -99,9 +107,17 @@
     font-size: 1em;
 }
 
-.agregar button i{
+.agregar button.addcarrito i{
     font-size: 1.5em;
     color: var(--color-principal)
+}
+
+.agregar button.restar, .agregar button.sumar {
+    margin: 0;
+    /* padding: 3px; */
+    font-size: 1em;
+    /* border: 0;
+    background: transparent; */
 }
 
 @media screen and (min-width: 768px) {
