@@ -23,84 +23,42 @@
 
 <body>
     <div class="contenedor">
-    <header>
-        <div class="logo">
-            <img src="images/tienda.png" alt="">
-            <p class="marca">LaTienda</p>
-        </div>
+        <header></header>
+        <nav></nav>
 
-        <div class="formBuscar">
-            <form action="">
-                <input type="search" name="" id="buscar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
-        </div>
+        <main>
+            <h1 class="titulo">Ubicación y Contacto</h1>
 
-        <div class="usuario">
-            <a href="favoritos.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="login.html"><i class="fa-solid fa-user"></i></a>
-            <a href="salir.html" style="display: none;"><i class="fa-solid fa-right-from-bracket"
-                    id="btn-salir"></i></a>
-        </div>
-    </header>
-    <nav>
-        <input type="checkbox" id="open-menu">
-        <label for="open-menu">
-            <i class="fa-solid fa-bars btn"></i>
-            <div class="formBuscar">
-                <form action="">
-                    <input type="search" name="" id="buscar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
-            </div>
-        </label>
+            <div class="contacto">
+                <section class="form_contacto">
+                    <form action="https://formspree.io/f/xvgoryld" method="post" class="formularios">
+                        <h2>Contáctenos</h2>
+                        <label for="nombre" class="">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="" placeholder="Escriba su nombre">
+                        <label for="mail" class="">Email</label>
+                        <input type="email" name="email" class="" placeholder="Escriba su email">
+                        <label for="mensaje" class="">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="8"
+                            placeholder="Escriba el mensaje aqui..."></textarea>
+                        <input type="submit" value="Enviar Mensaje" class="">
+                    </form>
+                </section>
+                <section class="ubicacion">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7420165566396!2d-58.366478224521764!3d-34.66121766053671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33351c5eec7ef%3A0xbc677ec4ef26dd79!2s25%20de%20Mayo%20127%2C%20B1870BZD%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730473456605!5m2!1ses-419!2sar"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="direccion"><i class="fa-solid fa-location-dot"></i> 25 de Mayo 127, Avellaneda, Bs. As.
+                    </p>
+                    <p class="direccion"><i class="fa-solid fa-phone"></i> 11 4526 7898</p>
+                </section>
 
-        <div class="link">
-            <a href="index.html"><i class="fa-solid fa-house"></i>Bienvenidos</a>
-            <a href="tienda.html"><i class="fa-solid fa-store"></i>Tienda</a>
-            <a href="contactenos.html"><i class="fa-solid fa-envelope"></i>Contáctenos</a>
-            <a href="administracion.html"><i class="fa-solid fa-toolbox"></i>Administración</a>
-        </div>
-    </nav>
+        </main>
 
-    <main>
-        <h1 class="titulo">Ubicación y Contacto</h1>
+        <footer></footer>
+    </div>
 
-        <div class="contacto">
-        <section class="form_contacto">
-            <form action="https://formspree.io/f/xvgoryld" method="post" class="formularios">
-                <h2>Contáctenos</h2>
-                <label for="nombre" class="">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="" placeholder="Escriba su nombre">
-                <label for="mail" class="">Email</label>
-                <input type="email" name="email" class="" placeholder="Escriba su email">
-                <label for="mensaje" class="">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="8" placeholder="Escriba el mensaje aqui..."></textarea>
-                <input type="submit" value="Enviar Mensaje" class="">
-            </form>
-        </section>
-        <section class="ubicacion">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7420165566396!2d-58.366478224521764!3d-34.66121766053671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33351c5eec7ef%3A0xbc677ec4ef26dd79!2s25%20de%20Mayo%20127%2C%20B1870BZD%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730473456605!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="direccion"><i class="fa-solid fa-location-dot"></i> 25 de Mayo 127, Avellaneda, Bs. As.</p>
-            <p class="direccion"><i class="fa-solid fa-phone"></i> 11 4526 7898</p>
-        </section>
- 
-    </main>
-
-    <footer>
-        <div class="img">
-            <img src="images/Logos_BA_Agencia_grande.jpg" alt="">
-        </div>
-        <div class="curso">
-            <p>FRONT END JS - Comisión: 24225</p>
-            <p>Año: 2024</P>
-        </div>
-        <div class="integrantes">
-            <p> María de los Ángeles López</p>
-        </div>
-    </footer>
-</div>
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>
