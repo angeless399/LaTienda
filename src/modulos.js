@@ -1,4 +1,4 @@
-export const header = `
+const header = `
         <div class="logo">
             <img src="images/tienda.png" alt="">
             <p class="marca">LaTienda</p>
@@ -21,7 +21,7 @@ export const header = `
 
 `;
 
-export const nav = `
+const nav = `
     <input type="checkbox" id="open-menu">
         <label for="open-menu">
             <i class="fa-solid fa-bars btn"></i>
@@ -41,7 +41,7 @@ export const nav = `
         </div>
 `;
 
-export const footer = `
+const footer = `
         <div class="img">
             <img src="images/Logos_BA_Agencia_grande.jpg" alt="">
         </div>
@@ -53,4 +53,8 @@ export const footer = `
             <p> María de los Ángeles López</p>
         </div>
 `;
+
+document.querySelector('header').innerHTML = header;
+document.querySelector('nav').innerHTML = nav;
+document.querySelector('footer').innerHTML = footer;
 
