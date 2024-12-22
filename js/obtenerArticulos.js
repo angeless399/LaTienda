@@ -61,7 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function agregarAlCarrito(product) {
         let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        const prodEncontrado = carrito.find(p => p.id == product.id)
 
+        if(!prodEncontrado){
         var producto = {
             id: product.id,
             title: product.title,
@@ -74,6 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
         carrito.push(producto);
         localStorage.setItem("carrito", JSON.stringify(carrito));
         alert(`${product.title} ha sido agregado al carrito!`)
+        }else{
+            alert('El producto ya se encuentra en el carrito')
+        }
     }
 
     //Carga inicial de productos

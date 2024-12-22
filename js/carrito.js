@@ -142,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
     function restarProducto(id, cant) {
         console.log(id, cant)
         //agarro carrito
@@ -150,11 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //busco indice del producto con ese id
         let indiceProducto = carrito.findIndex(p => p.id == parseInt(id))
-        // console.log(indiceProducto)
-        // console.log(carrito[indiceProducto].stock)
+   
         cant = parseInt(cant)
-        
-
         if (cant > 1) {
             const nvaCantidad = { cant: cant -= 1 };
             console.log('nueva cantidad' + nvaCantidad.cant);
