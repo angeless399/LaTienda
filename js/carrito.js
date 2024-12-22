@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         prodCarrito.innerHTML = `                       
                         <img src="${item.thumbnail}" alt="">
                         <div class="detalle">
-                            <button><i class="fa-solid fa-trash-can"></i></button>
+                            <button id="eliminarUnProducto"><i class="fa-solid fa-trash-can"></i></button>
                             <p>${item.title}</p>
                             <div class="agregar">
                                 <form action="">
@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     
         `;
+
+         //Agregar evento al boton "eliminarUnProducto"
+         const botonborrarItem = prodCarrito.querySelector('#eliminarUnProducto')
+         botonborrarItem.addEventListener("click", () => {
+             eliminarUnProducto(item.id)
+         })
 
         //Añadir la card al contenedor
         carritoItems.appendChild(prodCarrito);
@@ -73,5 +79,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 4000);
 
     })
+
+     //eliminar 1 producto del carrito
+     function eliminarUnProducto(id) {
+        // console.log(id);
+        //localStore guarda texto, JSON.parse convierte el texto en un objeto de Js
+        var carrito = JSON.parse(localStorage.getItem("carrito") || []);
+        carrito = carrito.filter((p) => p.id !== id)
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+
+        //codigo de sweet Alert
+        Swal.fire({
+            title: "Item eliminado",
+            icon: "success"
+        });
+
+        setTimeout(() => {
+            window.location.href = 'carrito.html'
+        }, 2000);
+
+    }
 })
 
