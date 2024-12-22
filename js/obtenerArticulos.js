@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="precio">$${product.price}<button class="favorito"><i class="fa-solid fa-heart"></i></button></p>
                         <div class="agregar">
                             <form action="">
-                              <button class="restar"><i class="fa-solid fa-square-minus"></i></button>
-                                <input type="number" name="cant" id="cant" min="0" value="1">
-                                <button class="sumar"><i class="fa-solid fa-square-plus"></i></button>
+                             <!-- <button class="restar"><i class="fa-solid fa-square-minus"></i></button> -->
+                              <!--  <input type="number" name="cant" id="cant" min="0" value="1"> -->
+                               <!-- <button class="sumar"><i class="fa-solid fa-square-plus"></i></button> -->
                             </form>
                             <div class="add">
                             <button class="addcarrito" id="agregar"><i class="fa-solid fa-cart-plus"></i></button>
