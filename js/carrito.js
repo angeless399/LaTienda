@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const prodCarrito = document.createElement("div");
         prodCarrito.className = "prodCarrito";
         prodCarrito.innerHTML = `                       
-                        <img src="${item.thumbnail}" alt="">
+                        <img src="${item.image}" alt="">
                         <div class="detalle">
                             <button id="eliminarUnProducto"><i class="fa-solid fa-trash-can"></i></button>
                             <p>${item.title}</p>

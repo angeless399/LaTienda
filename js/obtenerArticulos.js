@@ -60,8 +60,18 @@ document.addEventListener("DOMContentLoaded", () => {
     //funcion para agregar al carrito usando localStorage
 
     function agregarAlCarrito(product) {
-        let carrito= JSON.parse(localStorage.getItem("carrito")) || [];
-        carrito.push(product);
+        let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+        var producto = {
+            id: product.id,
+            title: product.title,
+            description: product.description,
+            image: product.thumbnail,
+            price: product.price,
+            stock: product.stock,
+            cant: 1
+        }
+        carrito.push(producto);
         localStorage.setItem("carrito", JSON.stringify(carrito));
         alert(`${product.title} ha sido agregado al carrito!`)
     }
