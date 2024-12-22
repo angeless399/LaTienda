@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Cargar productos al carrito
     carritoItemsStorage.forEach(item => {
+        let subtotal = 0;
         const prodCarrito = document.createElement("div");
         prodCarrito.className = "prodCarrito";
         prodCarrito.innerHTML = `                       
@@ -15,30 +16,40 @@ document.addEventListener("DOMContentLoaded", () => {
                             <p>${item.title}</p>
                             <div class="agregar">
                                 <form action="">
-                                    <button class="restar"><i class="fa-solid fa-square-minus"></i></button>
-                                    <input type="number" name="cant" id="cant" min="0" value="1">
-                                    <button class="sumar"><i class="fa-solid fa-square-plus"></i></button>
+                                    <button class="restar" id="restar"><i class="fa-solid fa-square-minus"></i></button>
+                                    <input type="number" name="cant" id="cant" min="1" max="${item.stock}" value="${item.cant}">
+                                    <button class="sumar" id="sumar"><i class="fa-solid fa-square-plus"></i></button>
                                 </form>
                                 <div>
                                     <p class="subtotal">total</p>
-                                    <p class="precio">$${item.price}</p>
+                                    <p class="precio">$${(item.price * item.cant).toFixed(2)}</p>
                                 </div>
                             </div>
                         </div>
                     
         `;
 
-         //Agregar evento al boton "eliminarUnProducto"
-         const botonborrarItem = prodCarrito.querySelector('#eliminarUnProducto')
-         botonborrarItem.addEventListener("click", () => {
-             eliminarUnProducto(item.id)
-         })
+        //Agregar evento al boton "eliminarUnProducto"
+        const botonborrarItem = prodCarrito.querySelector('#eliminarUnProducto')
+        botonborrarItem.addEventListener("click", () => {
+            eliminarUnProducto(item.id)
+        })
+
+        //Agregar evento al boton "sumar"
+        const botonsumar = prodCarrito.querySelector('#sumar')
+        botonsumar.addEventListener("click", () => {
+            sumarProducto(item.id, item.cant)
+        })
+
 
         //Añadir la card al contenedor
         carritoItems.appendChild(prodCarrito);
 
+        //calculo subtotal
+        subtotal = item.price * item.cant;
+
         //acumular total
-        total += item.price
+        total += subtotal;
 
     })
 
@@ -80,8 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
 
-     //eliminar 1 producto del carrito
-     function eliminarUnProducto(id) {
+    //eliminar 1 producto del carrito
+    function eliminarUnProducto(id) {
         // console.log(id);
         //localStore guarda texto, JSON.parse convierte el texto en un objeto de Js
         var carrito = JSON.parse(localStorage.getItem("carrito") || []);
@@ -99,5 +110,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000);
 
     }
+
+    function sumarProducto(id, cant) {
+        console.log(id, cant)
+        //agarro carrito
+        var carrito = JSON.parse(localStorage.getItem("carrito") || []);
+
+        //busco indice del producto con ese id
+        let indiceProducto = carrito.findIndex(p => p.id == parseInt(id))
+        // console.log(indiceProducto)
+        // console.log(carrito[indiceProducto].stock)
+        cant = parseInt(cant)
+        stock = parseInt(carrito[indiceProducto].stock)
+
+        if (cant < stock) {
+            const nvaCantidad = { cant: cant += 1 };
+            console.log('nueva cantidad' + nvaCantidad.cant);
+            carrito[indiceProducto] = {
+                ...carrito[indiceProducto],
+                ...nvaCantidad
+            }
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+        } else {
+            alert('No hay más stock')
+        }
+
+    }
+
+
+
 })
 
