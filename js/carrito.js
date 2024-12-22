@@ -41,6 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
             sumarProducto(item.id, item.cant)
         })
 
+           //Agregar evento al boton "restar"
+           const botonrestar = prodCarrito.querySelector('#restar')
+           botonrestar.addEventListener("click", () => {
+               restarProducto(item.id, item.cant)
+           })
 
         //Añadir la card al contenedor
         carritoItems.appendChild(prodCarrito);
@@ -138,6 +143,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    function restarProducto(id, cant) {
+        console.log(id, cant)
+        //agarro carrito
+        var carrito = JSON.parse(localStorage.getItem("carrito") || []);
 
+        //busco indice del producto con ese id
+        let indiceProducto = carrito.findIndex(p => p.id == parseInt(id))
+        // console.log(indiceProducto)
+        // console.log(carrito[indiceProducto].stock)
+        cant = parseInt(cant)
+        
+
+        if (cant > 1) {
+            const nvaCantidad = { cant: cant -= 1 };
+            console.log('nueva cantidad' + nvaCantidad.cant);
+            carrito[indiceProducto] = {
+                ...carrito[indiceProducto],
+                ...nvaCantidad
+            }
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+        } else {
+            alert('Cantidad minima 1, sino desea el producto debe eliminarlo')
+        }
+
+    }
 })
 
